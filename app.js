@@ -36,6 +36,7 @@ app.get("*", function (req, res) {
   res.redirect("/");
 });
 
-app.listen(process.env.PORT || 3000, process.env.IP, function () {
-  console.log("Yugansh Dhir portfolio website is live on port 3000");
+const port = process.env.PORT || 3000;
+app.listen(port, process.env.IP, function () {
+  console.log(`Yugansh Dhir portfolio website is live on port ${port}`);
 });
